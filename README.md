@@ -26,7 +26,7 @@ main.drawCenter(ctx, {
 ```
 main.SingleCenterByComplex(ctx, {
   content: [
-    {text: score, style: '58px Bold SimSun', color: '#ab322a'},
+    {text: 692, style: '58px Bold SimSun', color: '#ab322a'},
     {text: '分', style: '36px Bold SimSun'}
   ],
   y: 520
