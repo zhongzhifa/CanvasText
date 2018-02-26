@@ -36,6 +36,7 @@ CanvasText.prototype.SingleCenterByComplex = function (ctx, opt) {
   dx = centerPoint - W / 2;
   for (var i = 0; i < opt.content.length; i++) {
     ctx.font = opt.content[i].style;
+    ctx.fillStyle = opt.content[i].color ? (opt.content[i].color) : ('#000000');
     ctx.fillText(opt.content[i].text, dx, opt.y);
     dx += opt.content[i].width;
   };

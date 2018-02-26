@@ -36,8 +36,8 @@ function main() {
   // 绘制分数
   main.SingleCenterByComplex(ctx, {
     content: [
-      {text: score, style: '58px Bold SimSun'},
-      {text: '分', style: '36px Bold SimSun'}
+      {text: score, style: '58px Bold SimSun', color: '#ab322a'},
+      {text: '分', style: '36px Bold SimSun', color: '#ab322a'}
     ],
     y: 520
   });
