@@ -58,7 +58,7 @@ main.SingleByDirection(ctx, {
   direction: 'right',
   x: 170,
   y: 500,
-  text: '— '+ sessionStorage.schoolName +'',
+  text: '— '+ 广东财经大学 +'',
   style: '28px Bold SimSun',
   color: '#333333'
 });
