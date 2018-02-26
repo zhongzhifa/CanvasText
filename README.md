@@ -26,13 +26,13 @@ main.drawCenter(ctx, {
 ```
 main.SingleCenterByComplex(ctx, {
   content: [
-    {text: score, style: '58px Bold SimSun'},
+    {text: score, style: '58px Bold SimSun', color: '#ab322a'},
     {text: '分', style: '36px Bold SimSun'}
   ],
   y: 520
 });
 ```
-需要传入两个参数，分别为`canvas容器`和`配置参数`，配置参数分为：内容数组（包含文本、文本样式、文本颜色)、相对Y轴坐标
+需要传入两个参数，分别为`canvas容器`和`配置参数`，配置参数分为：内容数组（包含文本、文本样式、[文本颜色])、相对Y轴坐标
 ### 绘制多行居中的复杂文本
 ```
 main.MultiLineByComplex(ctx, {
