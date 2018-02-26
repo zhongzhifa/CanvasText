@@ -64,5 +64,7 @@ main.SingleByDirection(ctx, {
 });
 ```
 需要传入两个参数，分别为`canvas容器`和`配置参数`，配置参数分为：对齐方向（left或right）、距离左侧距离，距离顶部距离、内容、文本样式、文本颜色
+## 兼容性
+ie9+
 ## 预览地址
 [预览地址](https://zhongzhifa.github.io/CanvasText/)
