@@ -38,12 +38,12 @@ main.SingleCenterByComplex(ctx, {
 main.MultiLineByComplex(ctx, {
   content: [
     {text: '2018年高考成绩揭晓，', style: '28px Bold SimSun'},
-    {text: ''+ sessionStorage.name +'', style: '36px Bold SimSun', color: '#9c180a'},
+    {text: ''+ 钟志发 +'', style: '36px Bold SimSun', color: '#9c180a'},
     {text: ' 同学以 ', style: '28px Bold SimSun'},
     {text: ''+ score +'分 ', style: '36px Bold SimSun', color: '#9c180a'},
     {text: '获得', style: '28px Bold SimSun'},
-    {text: ''+ titleList[title].text +' ', style: '36px Bold SimSun', color: '#9c180a'},
-    {text: ''+ titleList[title].textEnd +'，以优异的成绩为校增光，望广大师生同学多向'+ sessionStorage.name +'同学请教学习。', style: '28px Bold SimSun'}
+    {text: ''+ 美国常青藤名校 +' ', style: '36px Bold SimSun', color: '#9c180a'},
+    {text: ''+ 青睐 +'，以优异的成绩为校增光，望广大师生同学多向'+ 钟志发 +'同学请教学习。', style: '28px Bold SimSun'}
   ],
   y: 594,
   width: 420,
