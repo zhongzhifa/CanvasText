@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no'>
+  <link rel="stylesheet" href="./domo/css/style.css">
+  <title>测试您的高考成绩</title>
+</head>
+<body>
+  <h1>测试您的高考成绩</h1>
+  <p class="info">想知道你的高考成绩能考多少分吗？输入您的名字和高中学校，来看看您的真正实力吧！</p>
+  <form>
+    <label>你的名字</label>
+    <input type="text" name="name" maxlength="6">
+    <label>你的学校</label>
+    <input type="text" name="school-name" maxlength="14">
+    <button type="button" class="test" id="btn">测试</button>
+  </form>
+  <script src="./domo/js/message.js"></script>
+  <script>
+    var message = new Message();
+    window.onload = function () {
+      var btn = document.getElementById('btn');
+      btn.addEventListener('click', function (e) {
+        var name = document.getElementsByName('name')[0].value;
+        var schoolName = document.getElementsByName('school-name')[0].value;
+        if (!name || name.length > 6) {
+          message.show('姓名为1至6个字符');
+        } else if (!schoolName || schoolName.length > 14) {
+          message.show('学校名称为1至14个字符');
+        } else {
+          sessionStorage.name = name;
+          sessionStorage.schoolName = schoolName;
+          window.location = './domo/canvas.html';
+        }
+      });
+    };
+  </script>
+</body>
+</html>

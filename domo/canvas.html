@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no'>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>喜报</title>
+</head>
+<body>
+  <!-- 内容区域 -->
+  <section class="content">
+    <canvas id="canvas" class="canvas" width="750" height="1208"></canvas>
+    <button type="button" class="btn btn1" id="change">变换模板</button>
+    <button type="button" class="btn btn2" id="build">生成图片</button>
+  </section>
+  <!-- 遮罩层、图片、loading -->
+  <div class="mask bg-w" id="mask">
+    <span class="loading" id="loading"></span>
+    <button type="button" id="exit" class="exit none">关闭</button>
+    <img src="#" id="img" class="none">
+  </div>
+  <script src="./../CanvasText.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
